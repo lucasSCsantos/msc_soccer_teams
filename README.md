@@ -65,6 +65,16 @@ npm start
 >```bash
 >http://localhost:3000/teams
 >```
+>A estrutura para adicionar um time deve ser essa:
+>```json
+>   {
+>     "team": "Lazio",
+>     "team_rating": 80,
+>     "city_id": 5, //Roma
+>     "country_id": 4, //Itália
+>     "league_id": 4 //Calcio A
+>   }
+>```
 >#### Deletar um time:
 >
 >```bash
