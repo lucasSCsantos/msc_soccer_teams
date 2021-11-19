@@ -16,8 +16,6 @@ npm start
 
 # End Points
 
-### PARA TODOS ESTÃO HABILITADOS OS MÉTODOS POST, GET E DELETE
-
 ### Times
 >#### Acessar todos os times:
 >
