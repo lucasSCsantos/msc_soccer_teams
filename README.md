@@ -14,3 +14,8 @@ npm install
 npm start
 ```
 # End Points
+### Times
+- getAll
+- getById
+- create
+- delete
