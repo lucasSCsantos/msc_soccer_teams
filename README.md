@@ -80,65 +80,53 @@ npm start
 >```bash
 >http://localhost:3000/teams/:id
 >```
-### Times
->#### Acessar todos os times:
+### Ligas
+>#### Acessar todas as ligas:
 >
 >```bash
->http://localhost:3000/teams
+>http://localhost:3000/leagues
 >```
 >```json
->[
->   { 
->     "id": 1,
->     "team": "PSG",
->     "rating": 84,
->     "city": "Paris",
->     "country": "France",
->     "league": "Ligue 1",
->     "players": [],
->   },
->   ...
+> [
+>		{
+>			"league_id": 1,
+>			"league": "Premier League",
+>			"country": "England"
+>		},
+>		{
+>			"league_id": 2,
+>			"league": "La Liga",
+>			"country": "Spain"
+>		},
+>		...
 > ]
 >```
->#### Acessar apenas um time:
+>#### Acessar apenas uma liga:
 >
 >```bash
->http://localhost:3000/teams/:id
+>http://localhost:3000/leagues/:id
 >```
 >```json
->  { 
->    "id": 1,
->    "team": "PSG",
->    "rating": 84,
->    "city": "Paris",
->    "country": "France",
->    "league": "Ligue 1",
->    "players": [
->       {
->         "id": 1,
->         "player": "Neymar"
->       },
->     ...
->    ],
->  }
+> {
+>		"league_id": 1,
+>		"league": "Premier League",
+>		"country": "England"
+>	},
 >```
->#### Adicionar um time:
+>#### Adicionar uma liga:
 >
 >```bash
->http://localhost:3000/teams
+>http://localhost:3000/leagues
 >```
->A estrutura para adicionar um time deve ser essa:
+>A estrutura para adicionar uma liga deve ser essa:
 >```json
->   {
->     "team": "Lazio",
->     "team_rating": 80,
->     "city_id": 5, //Roma
->     "country_id": 4, //Itália
->     "league_id": 4 //Calcio A
->   }
+> {
+> 	"league": "2. Bundesliga",
+>   "country_id": 5 //Alemanha
+> }
 >```
->#### Deletar um time:
+>#### Deletar uma liga:
 >
 >```bash
->http://localhost:3000/teams/:id
+>http://localhost:3000/leagues/:id
 >```
