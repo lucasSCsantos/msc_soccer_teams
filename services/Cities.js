@@ -1,6 +1,6 @@
 const Cities = require('../models/Cities');
 
-const serialize = async (object) => {
+const serialize = (object) => {
 	const { city_id, city, country } = object;
 	return	{
 		id: city_id,
@@ -18,7 +18,7 @@ const validateCity = (city, countryId) => {
 
 const getAll = async () => {
 	const cities = await Cities.getAll();
-	return cities;
+	return cities.map(serialize);
 }
 
 const getById = async (id) => {

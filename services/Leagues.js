@@ -1,6 +1,6 @@
 const Leagues = require('../models/Leagues');
 
-const serialize = async (object) => {
+const serialize = (object) => {
 	const { league_id, league, country } = object;
 	return	{
 		id: league_id,
@@ -18,7 +18,7 @@ const validateLeague = (league, countryId) => {
 
 const getAll = async () => {
 	const leagues = await Leagues.getAll();
-	return leagues;
+	return leagues.map(serialize);
 }
 
 const getById = async (id) => {

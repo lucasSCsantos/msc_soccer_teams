@@ -89,12 +89,12 @@ npm start
 >```json
 >[
 >		{
->			"league_id": 1,
+>			"id": 1,
 >			"league": "Premier League",
 >			"country": "England"
 >		},
 >		{
->			"league_id": 2,
+>			"id": 2,
 >			"league": "La Liga",
 >			"country": "Spain"
 >		},
@@ -108,7 +108,7 @@ npm start
 >```
 >```json
 >{
->		"league_id": 1,
+>		"id": 1,
 >		"league": "Premier League",
 >		"country": "England"
 >},
@@ -178,4 +178,54 @@ npm start
 >
 >```bash
 >http://localhost:3000/players/:id
+>```
+### Cidades
+>#### Acessar todas as cidades:
+>
+>```bash
+>http://localhost:3000/cities
+>```
+>```json
+>[
+>		{
+>			"id": 1,
+>			"city": "Manchester",
+>			"country": "England"
+>		},
+>		{
+>			"id": 2,
+>			"city": "Madrid",
+>			"country": "Spain"
+>		},
+>		...
+>]
+>```
+>#### Acessar apenas uma cidade:
+>
+>```bash
+>http://localhost:3000/cities/:id
+>```
+>```json
+>{
+>		"league_id": 1,
+>		"league": "Premier League",
+>		"country": "England"
+>},
+>```
+>#### Adicionar uma cidade:
+>
+>```bash
+>http://localhost:3000/cities
+>```
+>A estrutura para adicionar uma cidade deve ser essa:
+>```json
+>{
+>		"league": "2. Bundescidade",
+>		"country_id": 5 //Alemanha
+>}
+>```
+>#### Deletar uma cidade:
+>
+>```bash
+>http://localhost:3000/cities/:id
 >```
