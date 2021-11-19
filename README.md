@@ -207,9 +207,8 @@ npm start
 >```
 >```json
 >{
->		"league_id": 1,
->		"league": "Premier League",
->		"country": "England"
+>		"id": 1,
+>		"league": "Manchester",
 >},
 >```
 >#### Adicionar uma cidade:
@@ -220,8 +219,8 @@ npm start
 >A estrutura para adicionar uma cidade deve ser essa:
 >```json
 >{
->		"league": "2. Bundescidade",
->		"country_id": 5 //Alemanha
+>		"city": "Leicester",
+>		"country_id": 1 //Inglaterra
 >}
 >```
 >#### Deletar uma cidade:

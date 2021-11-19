@@ -2,7 +2,6 @@ const Leagues = require('../services/Leagues');
 
 const getAll =  async (req, res) => {
 	const leagues = await Leagues.getAll();
-	console.log(leagues)
 	
 	res.status(200).json(leagues);
 }
