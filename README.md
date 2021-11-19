@@ -15,7 +15,8 @@ npm start
 ```
 # End Points
 ### Times
-- getAll
-- getById
-- create
-- delete
+- team: "string"
+- rating: "integer"
+- city: "string"
+- league: "string"
+- players: "array"
