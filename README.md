@@ -24,10 +24,41 @@ npm start
 >```bash
 >http://localhost:3000/teams
 >```
+>```json
+>[
+>   { 
+>     "id": 1,
+>     "team": "PSG",
+>     "rating": 84,
+>     "city": "Paris",
+>     "country": "France",
+>     "league": "Ligue 1",
+>     "players": [],
+>   },
+>   ...
+> ]
+>```
 >#### Acessar apenas um time:
 >
 >```bash
 >http://localhost:3000/teams/:id
+>```
+>```json
+>  { 
+>    "id": 1,
+>    "team": "PSG",
+>    "rating": 84,
+>    "city": "Paris",
+>    "country": "France",
+>    "league": "Ligue 1",
+>    "players": [
+>       {
+>         "id": 1,
+>         "player": "Neymar"
+>       },
+>     ...
+>    ],
+>  }
 >```
 >#### Adicionar um time:
 >
