@@ -14,7 +14,7 @@ npm install
 npm start
 ```
 
-# End Points
+## End Points
 
 ### Times
 >#### Acessar todos os times:
